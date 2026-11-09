@@ -21,12 +21,13 @@ body{
     padding: 50px;
     width: 600px;
     height: auto;
-    overflow: hidden;
     display: flex;
 }
 .content{
     padding: 0;
     display: block;
+    justify-content: space-between;
+    
 }
 
 #btnNo, #btnYes{
@@ -41,7 +42,11 @@ body{
     cursor: pointer;
 
 }
+#btnNo{
+    margin-left: 20px;
 
+    transition: 0.2s;
+}
 
 #btnYes:active{
     transform: scale(0.95);
@@ -56,8 +61,8 @@ body{
     border-radius: 10px;
 }
 .image img{
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: center;
 }

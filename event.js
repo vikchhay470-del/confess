@@ -1,7 +1,7 @@
 const Yesbtn= document.getElementById("btnYes");
 const Nobtn= document.getElementById("btnNo");
 
-const Text= document.getElementById("text");
+const text= document.getElementById("text");
 const Catpic= document.getElementById("imageCat");
 
 const images=[
@@ -28,12 +28,15 @@ Nobtn.addEventListener("click", function() {
 // });
 
 Nobtn.addEventListener("click", function(){
-    let x=Math.random()*250;
-    let y=Math.random()*250;
+    const maxX = 500;
+    const maxY = 300;
 
-    Nobtn.style.position ="absolute";
-    Nobtn.style.left=x+"px";
-    Nobtn.style.top=y+"px";
+    let x = Math.random() * maxX;
+    let y = Math.random() * maxY;
+
+    Nobtn.style.position="absolute";
+    Nobtn.style.left = x + "px";
+    Nobtn.style.top = y + "px";
 
 });
 
@@ -53,7 +56,31 @@ Yesbtn.addEventListener("mouseenter", function(){
     };
 });
 
-Yesbtn.addEventListener("mouseleave", function() {
-    Catpic.src = "image/cat1.jpg";
+// Yesbtn.addEventListener("mouseleave", function() {
+//     Catpic.src = "image/cat1.jpg";
+// });
+
+Yesbtn.addEventListener("click", function(){
+    Catpic.src="image/cat7.gif";
+
+    text.textContent="Yayyyyy!! I love you too.";
 });
 
+const messages = [
+    "Are you sure?",
+    "Please think again!",
+    "Don't break my heart!",
+    "Just click YES!"
+];
+
+let messageIndex = 0;
+
+Nobtn.addEventListener("click", function() {
+    text.textContent = messages[messageIndex];
+
+    messageIndex++;
+
+    if (messageIndex >= messages.length) {
+        messageIndex = 0;
+    }
+});
