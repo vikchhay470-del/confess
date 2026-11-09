@@ -19,16 +19,21 @@ body{
     background-color: #f9e6ea;
     box-shadow: 0 3px 15px rgba(0 0 0 0.1);
     border-radius: 10px;
-    padding: 50px;
+    padding: 50px 30px;
     width: 600px;
     height: auto;
     display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 .content{
     padding: 0;
     display: block;
     justify-content: space-between;
-    
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
 }
 
 #btnNo, #btnYes{
@@ -42,7 +47,6 @@ body{
     border-radius: 5px;
     cursor: pointer;
     color: black;
-    margin-bottom: 10px;
 }
 #btnNo{
     margin-left: 20px;
@@ -63,6 +67,8 @@ body{
     width: 200px;
     margin-right: 0;
     border-radius: 10px;
+    justify-content: center; 
+    align-items: center; 
 }
 .image img{
     width: 200px;
@@ -79,10 +85,6 @@ body{
     align-items: center;
 }
 
-#btn{
-    margin-bottom: 20px;
-    
-}
 
 
 /* Phone responsive */
