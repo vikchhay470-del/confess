@@ -108,12 +108,15 @@ body{
 
     .image {
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .image img {
         max-width: 250px;
         width: 100%;
         height: auto;
+        
     }
 
     #btn {
