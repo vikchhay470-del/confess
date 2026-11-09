@@ -10,6 +10,7 @@ body{
     justify-content: center;
     display: flex;
     min-height: 100vh;
+    color: black;
 }
 .main-card{
     font-family: 'Times New Roman', Times, serif, 'Arial Narrow', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif;
@@ -40,7 +41,8 @@ body{
     background-color: #f5b4d0;
     border-radius: 5px;
     cursor: pointer;
-
+    color: black;
+    margin-bottom: 10px;
 }
 #btnNo{
     margin-left: 20px;
@@ -50,9 +52,11 @@ body{
 
 #btnYes:active{
     transform: scale(0.95);
+    background-color: #f493bd;
 }
 #btnNo:active{
     transform: scale(0.95);
+    background-color: #f493bd;
 }
 
 .image{
@@ -66,6 +70,20 @@ body{
     object-fit: cover;
     object-position: center;
 }
+#text{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 60px;
+    align-items: center;
+}
+
+#btn{
+    margin-bottom: 20px;
+    
+}
+
 
 /* Phone responsive */
 @media screen and (max-width: 768px) {
