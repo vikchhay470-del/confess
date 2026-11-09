@@ -61,3 +61,29 @@ body{
     object-fit: cover;
     object-position: center;
 }
+
+/* Phone responsive */
+@media screen and (max-width: 768px) {
+
+    .main-card {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #text {
+        font-size: 20px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    #imageCat {
+        max-width: 250px;
+    }
+}
