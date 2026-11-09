@@ -47,24 +47,25 @@ const images_happycat=[
 ]
 let Sec_index=0;
 
-Yesbtn.addEventListener("mouseenter", function(){
+Yesbtn.addEventListener("click", function(){
     Catpic.src=images_happycat[Sec_index];
 
     Sec_index++;
     if(Sec_index >= images_happycat.length){
         Sec_index=0;
     };
+    text.textContent="Yayyyyy!! I love you too.";
 });
 
 // Yesbtn.addEventListener("mouseleave", function() {
 //     Catpic.src = "image/cat1.jpg";
 // });
 
-Yesbtn.addEventListener("click", function(){
-    Catpic.src="image/cat7.gif";
+// Yesbtn.addEventListener("click", function(){
+//     Catpic.src="image/cat7.gif";
 
-    text.textContent="Yayyyyy!! I love you too.";
-});
+//     text.textContent="Yayyyyy!! I love you too.";
+// });
 
 const messages = [
     "Are you sure?",
